@@ -1,0 +1,77 @@
+Here are the aim, theory, and algorithms in short for all the topics you listed:
+
+
+---
+
+1. Naïve Bayes
+
+Aim
+
+To classify data based on probability using Bayes’ Theorem.
+
+Theory
+
+It is a probabilistic classifier.
+
+Assumes features are independent (Naïve assumption).
+
+Uses Bayes’ Theorem to compute the probability of each class.
+
+
+Algorithm
+
+1. Calculate prior probability for each class.
+
+
+2. Calculate likelihood probability of features given a class.
+
+
+3. Apply Bayes’ theorem:
+
+
+
+P(class|features) = \frac{P(features|class)\cdot P(class)}{P(features)}
+
+
+---
+
+2. Apriori Algorithm
+
+Aim
+
+To find frequent itemsets and generate association rules in market basket analysis.
+
+Theory
+
+Uses support and confidence to find frequent patterns.
+
+Works level-wise: frequent 1-itemsets → 2-itemsets → 3-itemsets.
+
+Uses Apriori property:
+If an itemset is frequent, all its subsets must also be frequent.
+
+
+Algorithm
+
+1. Generate frequent 1-itemsets (L1).
+
+
+2. Use L1 to generate candidate sets for L2.
+
+
+3. Count support and keep only those  minimum support.
+
+
+4. Repeat until no more itemsets can be generated.
+
+
+5. Generate association rules from frequent itemsets.
+
+
+
+
+---
+
+3. Decision Tree
+
+Aim
