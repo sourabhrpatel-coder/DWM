@@ -1,0 +1,187 @@
+Here are the aim, theory, and algorithms in short for all the topics you listed:
+
+
+---
+
+1. Naïve Bayes
+
+Aim
+
+To classify data based on probability using Bayes’ Theorem.
+
+Theory
+
+It is a probabilistic classifier.
+
+Assumes features are independent (Naïve assumption).
+
+Uses Bayes’ Theorem to compute the probability of each class.
+
+
+Algorithm
+
+1. Calculate prior probability for each class.
+
+
+2. Calculate likelihood probability of features given a class.
+
+
+3. Apply Bayes’ theorem:
+
+
+
+P(class|features) = \frac{P(features|class)\cdot P(class)}{P(features)}
+
+
+---
+
+2. Apriori Algorithm
+
+Aim
+
+To find frequent itemsets and generate association rules in market basket analysis.
+
+Theory
+
+Uses support and confidence to find frequent patterns.
+
+Works level-wise: frequent 1-itemsets → 2-itemsets → 3-itemsets.
+
+Uses Apriori property:
+If an itemset is frequent, all its subsets must also be frequent.
+
+
+Algorithm
+
+1. Generate frequent 1-itemsets (L1).
+
+
+2. Use L1 to generate candidate sets for L2.
+
+
+3. Count support and keep only those above minimum support.
+
+
+4. Repeat until no more itemsets can be generated.
+
+
+5. Generate association rules from frequent itemsets.
+
+
+
+
+---
+
+3. Decision Tree
+
+Aim
+
+To create a model that predicts a target value by learning simple decision rules from data.
+
+Theory
+
+A tree-like structure: root → internal nodes → leaves.
+
+Splits are based on information gain, Gini index, or gain ratio.
+
+Can be used for classification and regression.
+
+
+Algorithm (ID3/CART)
+
+1. Select the best attribute to split using:
+
+ID3 → Information Gain
+
+CART → Gini Index
+
+
+
+2. Split the data based on the best attribute.
+
+
+3. Repeat for each subset until:
+
+Pure leaf, or
+
+No more attributes.
+
+
+
+4. Form final decision tree.
+
+
+
+
+---
+
+4. FP-Tree (Frequent Pattern Tree)
+
+Aim
+
+To find frequent itemsets faster than Apriori by avoiding candidate generation.
+
+Theory
+
+Uses a compact tree structure to store item frequency.
+
+Requires two database scans.
+
+Based on divide-and-conquer approach.
+
+
+Algorithm
+
+1. Scan database once → find frequent items.
+
+
+2. Order items by frequency and build FP-tree.
+
+
+3. For each item, build conditional pattern base.
+
+
+4. Construct conditional FP-tree.
+
+
+5. Recursively mine it to find frequent patterns.
+
+
+
+
+---
+
+5. K-Means Clustering
+
+Aim
+
+To partition data into K clusters based on similarity.
+
+Theory
+
+Unsupervised learning algorithm.
+
+Groups data by minimizing intra-cluster distance.
+
+Based on Euclidean distance.
+
+
+Algorithm
+
+1. Select K cluster centers randomly.
+
+
+2. Assign each data point to the nearest centroid.
+
+
+3. Recalculate centroids (mean of assigned points).
+
+
+4. Repeat steps 2–3 until centroids don’t change.
+
+
+
+
+---
+
+If you want, I can also give examples, diagrams, or very short exam-ready answers.
